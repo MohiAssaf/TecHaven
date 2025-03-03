@@ -4,7 +4,7 @@ import demoProducts from "../demoData/demoProducts";
 
 export default function Catalog(){
     return(
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-4 gap-5 m-30">
           {demoProducts.map((product) => (
             <div key={product.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img

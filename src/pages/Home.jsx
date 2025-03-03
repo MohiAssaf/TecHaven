@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import demoProducts from '../demoData/demoProducts';
+import featuredProducts from '../demoData/featuredProducts';
 
 const Home = () => {
   return (
@@ -21,8 +21,8 @@ const Home = () => {
           <h2 className="text-3xl font-bold">Featured Products</h2>
           <p className="mt-2 text-lg text-gray-600">Browse our top used tech items</p>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {demoProducts.map((product) => (
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          {featuredProducts.map((product) => (
             <div key={product.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img
                 src={product.image}
